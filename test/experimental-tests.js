@@ -34,10 +34,13 @@ describe('String tests', function () {
     it('URL should be contains the string', function () {
         expect(simple_url.indexOf("ARTICLE_ID")).to.be.ok;
     });
+    
+    it('URL should be contains N strings', function () {
+        expect(simple_url.match(/(ARTICLE_ID|VIEW_ARTICLE)/)).to.be.ok;
+    });
 });
 
 describe('DOM creation tests', function () {
-
     it('JQuery should create the element using chain notation', function () {
         var $newElement = $("<div></div>").addClass("crm-back-top")
             .html($("<a href='#top'></a>"))
@@ -45,4 +48,5 @@ describe('DOM creation tests', function () {
         expect($newElement.find('.icon').length).to.be.equals(1);
     })
 
-})
+});
+
