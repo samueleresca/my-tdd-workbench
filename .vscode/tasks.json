@@ -14,9 +14,10 @@
     ],
     "tasks": [
         {
-            "taskName": "karma:dev",
+            "taskName": "default",
             "args": [],
-            "isBuildCommand": true,
+            "isTestCommand": true,
+            "isBuildCommand": false,
             "problemMatcher": "$msCompile"
         }
     ]

@@ -7,7 +7,7 @@ npm install
 ##Run environment
 
 ```
-grunt karma:dev
+grunt default
 ```
 ###IE launcher
 
