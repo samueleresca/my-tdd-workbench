@@ -38,7 +38,7 @@ module.exports = function (grunt) {
 
             dev: {
                 // All tested enviroments!!! (Browsers + phantomJS)
-                browsers: ['Chrome', 'Firefox', 'PhantomJS', 'IE'],
+                browsers: ['Chrome', 'Firefox', 'PhantomJS', 'IE', 'IE9', 'IE10'],
                 customLaunchers: {
                     IE9: {
                         base: 'IE',
