@@ -1,5 +1,4 @@
 //Grunt configuration
-$ = require('jquery'),
 
 module.exports = function (grunt) {
     'use strict';
@@ -29,11 +28,17 @@ module.exports = function (grunt) {
                     'node_modules/sinon-chai/lib/sinon-chai.js',
                     'node_modules/sinon/pkg/sinon.js',
                     'node_modules/jquery/dist/jquery.js',
-
                 // Our test files
                     'test/experimental-tests.js',
-                    'test/index.html'
-                ]
+                    'test/*.html',
+                    'test/mockHTML/*.html',
+                    
+                ],
+                preprocessors: {
+                    'test/*.html':['html2js'],
+                    'test/mockHTML/*.html': ['html2js'],
+                    
+                },
             },
 
             dev: {

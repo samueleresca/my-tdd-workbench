@@ -21,7 +21,7 @@
         "phantomjs": "^1.9.18",
         "sinon": "^1.12.2",
         "sinon-chai": "^2.6.0",
-        "jquery": "*"
+        "jquery": "2.2.0"
     },
     "version": "1.0.0",
     "main": "Gruntfile.js",
