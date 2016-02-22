@@ -28,7 +28,6 @@ describe('Global tests', function () {
 
 });
 
-
 describe('String tests', function () {
     var simple_url;
     //Before the execution, initialize the object
@@ -43,6 +42,7 @@ describe('String tests', function () {
     });
 
     it('URL should be contains N strings', function () {
+        //RETURNS NULL IF DOESN'T MATCH
         expect(simple_url.match(/(ARTICLE_ID|VIEW_ARTICLE)/)).to.be.ok;
     });
 });

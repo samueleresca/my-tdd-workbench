@@ -13,6 +13,6 @@ module.exports = function (config) {
         singleRun: false,
         // LOGGING LEVEL: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
         logLevel: config.LOG_DISABLE,
-        reporters: ['mocha']
+        reporters: ['mocha'],
     });
 };
