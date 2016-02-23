@@ -31,12 +31,12 @@ module.exports = function (grunt) {
                     'test/experimental-tests.js',
                     'test/*.html',
                     'test/mockHTML/*.html',
-                    
+
                 ],
                 preprocessors: {
-                    'test/*.html':['html2js'],
+                    'test/*.html': ['html2js'],
                     'test/mockHTML/*.html': ['html2js'],
-                    
+
                 },
             },
 
