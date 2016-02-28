@@ -28,14 +28,14 @@ module.exports = function (grunt) {
                     'node_modules/sinon/pkg/sinon.js',
                     'node_modules/jquery/dist/jquery.js',
                 // Our test files
-                    'test/experimental-tests.js',
-                    'test/*.html',
-                    'test/mockHTML/*.html',
+                    'specs/*.spec.js',
+                    'specs/*.html',
+                    'specs/mockHTML/*.html',
 
                 ],
                 preprocessors: {
-                    'test/*.html': ['html2js'],
-                    'test/mockHTML/*.html': ['html2js'],
+                    'specs/*.html': ['html2js'],
+                    'specs/mockHTML/*.html': ['html2js'],
 
                 },
             },
