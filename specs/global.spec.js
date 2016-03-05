@@ -1,7 +1,7 @@
 //FIX to the error : "expect is not defined"
 var expect = chai.expect;
 //describe String tests
-describe('Global tests', function () {
+describe('Sample tests', function () {
     //Before the execution, initialize the object
     before(function () { });
 
@@ -25,4 +25,5 @@ describe('Global tests', function () {
         document.body.innerHTML = window.__html__['specs/mockHTML/demo.html'];
         expect($(document).find('.test-html2js').length).to.be.equals(1);
     });
+
 });
